@@ -11,8 +11,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone <URL вашего репозитория>
-   cd <название директории репозитория>
+   git clone <flask-postgres-docker-counter>
+   cd flask-postgres-docker-counter
    ```
 
 2. Убедитесь, что Docker и Docker Compose установлены и запущены на компьютере.
