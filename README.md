@@ -1,4 +1,4 @@
-# Flask Project
+# Flask Counter Project
 
 Этот учебный проект представляет собой веб-приложение на Flask с использованием PostgreSQL в качестве базы данных. Проект упакован в Docker и может быть запущен с помощью Docker Compose.
 
