@@ -8,5 +8,25 @@ services:
       - .:/code
     environment:
       FLASK_ENV: development
-  redishost:
-    image: "redis:alpine"
+    depends_on:
+      - db
+    working_dir: /code/app
+    command: flask run --host=0.0.0.0
+  db:
+    image: postgres:alpine
+    environment:
+      POSTGRES_DB: counter_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+
+volumes:
+  db_data:
