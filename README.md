@@ -26,6 +26,13 @@
 
 2. Приложение будет доступно по адресу `http://localhost:5000`.
 
+![image](https://github.com/user-attachments/assets/bd345812-782c-4b13-9175-1ac2376362ff)
+
+4. По адресу `http://localhost:5000/db` можно найти вывод данныз из бд
+
+![image](https://github.com/user-attachments/assets/9c67afd2-b3f6-48f2-bb43-c6e3ccee1d3d)
+
+
 ## Остановка проекта
 
 Чтобы остановить контейнеры, выполните: 
